@@ -3,8 +3,8 @@ CFLAGS = -Wall -Wextra -Werror -std=c99 -pedantic
 LDLIBS = -lm
 VPATH = src
 
-OBJ = main.o
-BIN = nbn
+OBJ = main.o nbc.o
+BIN = nbc
 
 $(BIN): $(OBJ)
 	$(CC) -o $@ $^ $(LDLIBS)
