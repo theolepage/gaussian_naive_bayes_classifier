@@ -21,6 +21,17 @@ static struct nbc_vector *load_training_data()
 
 int main(void)
 {
+    /*
+    Future usage:
+
+    struct nbc *classifier = nbc_create(nb_classes, nb_features);
+    nbc_vector_add(id_class, list);
+    nbc_vector_add(id_class, list);
+    nbc_vector_add(id_class, list);
+    unsigned res = nbc_predict(list);
+    nbc_destroy(classifier);
+    */
+
     // Declare the testing sample
     struct nbc_vector sample = { 0, { 6.00, 130, 8 } };
 

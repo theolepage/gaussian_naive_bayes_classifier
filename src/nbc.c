@@ -67,7 +67,7 @@ static unsigned compute_probabilities(
     unsigned res = 0;
     for (unsigned c = 0; c < NBC_CLASSES_COUNT; c++)
     {
-        float tmp = 0.5;
+        float tmp = 1.0f / NBC_CLASSES_COUNT;
         for (unsigned f = 0; f < NBC_FEATURES_COUNT; f++)
             tmp *= normal_distribution_probability(sample.features[f],
                     classes[c].means[f],

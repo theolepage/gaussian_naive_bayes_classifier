@@ -4,8 +4,8 @@ Attempt to implement a naive Bayes classifier from scratch.
 
 ## To-Do
 
-- [ ] Use as a library
-- [ ] Better API / organization of data
+- [ ] Add documentation
+- [ ] Make usage more convenient and rely on lists
 - [ ] Test with other examples
 - [ ] Multithread using OpenMP
 
